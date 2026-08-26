@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment variables (contains secrets)
+.env
+backend/.env
+
+# SQLite database file
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+prisma/dev.db
+backend/dev.db
+
+# Prisma generated client (regenerated via prisma generate)
+node_modules/.prisma/
+backend/node_modules/.prisma/
+
+# Build outputs
+dist/
+build/
+frontend/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Prisma migrations lock (keep migrations folder, exclude lock)
+prisma/migrations/migration_lock.toml
