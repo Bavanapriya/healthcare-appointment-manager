@@ -1,0 +1,16 @@
+{
+  "name": "healthcare-project-monorepo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:concurrency": "tsx verify_concurrency.ts",
+    "seed": "tsx backend/seed.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.10.2"
+  }
+}
